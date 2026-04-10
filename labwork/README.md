@@ -41,3 +41,10 @@ them to user space application as port ids - 0, 1, 2, 3
 . Physically contiguous memory chunks.
 . Large pages, so fewer page table entries, and fewer TLB entries. Faster translations.
 . Address page faults overhead.
+
+
+
+#### Build
+sudo apt install python3-pyelftools
+meson -Dexamples=all build
+meson setup --reconfigure
